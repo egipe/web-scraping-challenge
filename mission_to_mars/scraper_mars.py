@@ -2,7 +2,6 @@
 import pandas as pd
 from bs4 import BeautifulSoup 
 from splinter import Browser
-import requests
 
 def init_browser():
     # @NOTE: Replace the path with your actual path to the chromedriver
