@@ -22,24 +22,21 @@
   <div class = "container">
       <div class = "col-lg-8 com-sm-12">
         <h2>Featured Mars Image:</h2>
-        <img src = "{{mars.featured_image_url}}">
+        <img src="{{mars.mars_main_image}}">
       </div>
-      <div class = "col-lg-4 col-sm-12">
+      <!-- <div class = "col-lg-4 col-sm-12">
         <h3>Mars Facts:</h3>
-        <div {{table_html}}>
-        </div>
-      </div>
+        <a href= "{{mars.mars_table}}"></a>
+        </div> -->
   </div>
 
   <div class="container-fluid">
-    <div class = "card deck">
       <div class = "col-md-12">
         <h2>Mars Hemispheres</h2>
         {% for x in images %}
-        <img src="{{hemispheres}}">
-        {% endfor %}
+        <img src="{{mars.mars_hemi_imgs}}">
       </div>
-    </div>
+      {% endfor %}
   </div>
 
 </body>
